@@ -1,0 +1,248 @@
+/*CSS Reset*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+
+
+
+#logo {
+    margin:10px 25px; 
+}
+
+#logo img{
+    height: 51px;
+    width:54px;
+    margin: 3px 2px;
+}
+
+/*navbar section*/
+#navbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:0px
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.7rem;
+}
+
+#navbar ul li a {
+    color:white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+    color:white;
+    background-color:black;
+}
+
+#navbar::before{
+   content: "";
+   background-color: black;
+   position: absolute;
+   top:0px;
+   left: 0px;
+   height: 100%;
+   width:100%;
+   z-index:-1;
+   opacity: 0.4;
+}
+
+/*Home Section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 406px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+   position: absolute;
+   top:0px;
+   left: 0px;
+   background: url("/images/bg2.jpg") no-repeat center center/cover;
+   height: 65%;
+   width:100%;
+   z-index:-1;
+   opacity: 0.89;
+}
+
+#home h2{
+    margin-top: 101px;
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 42px;
+}
+/*Services Section*/
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+.Services-container h1{
+    margin-top: 12px;
+    font-size: 65px;
+    text-decoration: underline;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 7px;
+    margin: -20px 56px;
+    height:285px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    background-color: #f7f7f7;
+}
+#services .box img{
+    width: 183px;
+    height: 116px;
+   display: block;
+   margin: auto;
+   margin-top: 16px;
+   
+}
+
+
+#services .box p{
+    font-family:  'Bree Serif', serif;
+}
+
+/*Client Section*/
+#client-section{
+    position: relative;
+    height: 572px;
+    margin-bottom: -166px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background:url('/images/bg4.jpg') no-repeat center center/cover;
+    height: 71%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.1;
+}
+#client-section h1{
+    color: white;
+    font-size: 71px;
+    text-decoration: underline;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 144px;
+    width: 215px;
+    
+}
+.client-item{
+    
+    padding: 41px;
+    margin-top: 40px;
+    
+}
+/*Contact Section*/
+#contact h1{
+    color:white;
+    text-decoration: underline;
+    font-size: 69px;
+}
+#contact{
+    position: relative;
+    height:527px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background:url('/images/form.jpg') no-repeat center center/cover;
+   
+   height: 95%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.1;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 34px;
+    margin-bottom: -23px;
+    margin-top: 21px;
+}
+#contact-box label{
+    font-weight: bold;
+    font-family: 'Bree Serif',serif;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:142%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    
+}
+.form-group label{
+  color:white;
+}
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+/*Utility Classes*/
+.h-primary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family:  'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+    font-family:  'Bree Serif', serif;
+}
+.btn{
+    padding: 6px 20px;
+    border-style: none;
+    background-color:black;
+    color: white;
+    margin: 17px;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+    font-weight: bold;
+}

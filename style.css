@@ -80,7 +80,7 @@
    position: absolute;
    top:0px;
    left: 0px;
-   background: url("/images/bg2.jpg") no-repeat center center/cover;
+   background: url("https://github.com/NandiniAgrawal17/MyOnlineMeals/blob/master/images/bg2.jpg") no-repeat center center/cover;
    height: 65%;
    width:100%;
    z-index:-1;
@@ -144,7 +144,7 @@
 #client-section::before{
     content: "";
     position: absolute;
-    background:url('/images/bg4.jpg') no-repeat center center/cover;
+    background:url('https://github.com/NandiniAgrawal17/MyOnlineMeals/blob/master/images/bg4.jpg') no-repeat center center/cover;
     height: 71%;
     width: 100%;
     z-index: -1;
@@ -184,7 +184,7 @@
 #contact::before{
     content: "";
     position: absolute;
-    background:url('/images/form.jpg') no-repeat center center/cover;
+    background:url('https://github.com/NandiniAgrawal17/MyOnlineMeals/blob/master/images/form.jpg') no-repeat center center/cover;
    
    height: 95%;
     width: 100%;
